@@ -8,9 +8,19 @@ namespace CSExercises
 {
     public class Ex12
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
-            
+            double distance, cost, ccost;
+            Console.WriteLine("Wlecome to ABC Taxi Company!");
+            Console.Write("Please input your distance(km):  ");
+            distance = Convert.ToDouble(Console.ReadLine());
+            cost = distance * 0.4 + 2.40;
+            //  string ccost = cost.ToString("c");
+            ccost = Math.Round(cost, 1);
+            Console.WriteLine("****************************");
+            Console.WriteLine("distance(km): " + distance);
+            Console.Write("the cost(S$): ");
+            Console.Write("{0:##.#0}", ccost);
         }
     }
 }
